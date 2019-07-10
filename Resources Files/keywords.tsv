@@ -1,0 +1,20 @@
+*Settings*							
+Library	mathemetical_operations.py						
+							
+*Keywords*							
+Total price	[Arguments]	${price1}	${disc1}				
+	${total_price}	Add	${price1}	${disc1}			
+	[Return]	${total_price}					
+							
+Print	[Arguments]	${arg1}					
+	Log To Console	${arg1}					
+							
+Calculation of discount price	[Arguments]	${product_price}	${discount}				
+	${discount_sum}	Calculation of discount sum	${product_price}	${discount}			
+	${discount_price}	Substract	${product_price}	${discount_sum}			
+	[Return]	${discount_price}					
+							
+Calculation of discount sum	[Arguments]	${product_price}	${discount}				
+	${temp_var}	Multiply	${product_price}	${discount}			
+	${discount_sum}	Divide	${temp_var}	${100}			
+	[Return]	${discount_sum}					

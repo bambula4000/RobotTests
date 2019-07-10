@@ -1,0 +1,15 @@
+*Settings*							
+Documentation	Resources contains keyword that help work with MySQL						
+Library	DatabaseLibrary						
+							
+*Keywords*							
+Add	[Documentation]	Keyword are executing sql script that wil \ add in table 10 records					
+	Execute Sql Script	C:\\Program Files\\MySQL\\MySQL Server 5.5\\add_data.sql					
+							
+Select	[Arguments]	${what}	${criteria}				
+	[Documentation]	Keyword are running SELECT sql function. Takes two arguments:					
+	...	- *what* - is \ what needs to select from table(should be srintg with MySQL command).					
+	...	- *criteria* - is a search criteria(should be MySQL command with some conditions).					
+	...	Returning result of select funtion.					
+	${query_result}	Query	SELECT ${what} FROM demo1 WHERE ${criteria}				
+	[Return]	${query_result}					

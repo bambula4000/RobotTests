@@ -1,0 +1,49 @@
+*Settings*							
+Library	OperatingSystem						
+Library	SSHLibrary						
+							
+*Keywords*							
+Verify UI	[Documentation]	Keyword will verify connect to UI					
+	Log	Verify UI work					
+	[Return]	FAILED					
+							
+Verify Backend	[Documentation]	Keyword will verify connect to Backend					
+	Log	Verify backend work					
+	[Return]	PASSED					
+							
+Edit Config	[Arguments]	${value}					
+	[Documentation]	Configuration keyword with credentials for connections to hosts					
+	${param}	Set Variable	${value}				
+	[Return]	${param}					
+							
+Backup Configuration	[Documentation]	Keyword will repair configuration.					
+	No Operation						
+							
+Directory Remover	[Documentation]	Keyword will restore configuration					
+	: FOR	${index}	IN RANGE	1	6		
+		Remove Directory	robot_${index}				
+							
+Run	[Arguments]	${CLI_command}					
+	[Documentation]	Keyword that runs command in CLI					
+	...	*Arguments:*					
+	...	- *${CLI_command} -* \ is command that will runs in command line interface.					
+	...	- *${result} -* is \ result of runed command.					
+	${result}	OperatingSystem.Run	${CLI_command}				
+	[Return]	${result}					
+							
+Login To Remote Host	[Arguments]	${host}	${username}	${password}			
+	[Documentation]	Login to remote host.					
+	...	*Arguments:*					
+	...	- *${host} -* is host would you like to connect.					
+	...	- *${username} -* is username to connect to host					
+	...	- *${password} -* is users password to connect to host					
+	${connection_id_2}	SSHLibrary.Open Connection	${host}				
+	${output}	SSHLibrary.Login	${username}	${password}			
+							
+Exit From Remote Host	[Documentation]	Keyword will close remote connection to host					
+	SSHLibrary.Close Connection						
+							
+Restore Configuration	${params}	Create List	host	Default	user	Default	password
+	...	Default					
+	:FOR	${param}	${value}	IN	@{params}		
+		Edit Config	${param}=${value}				
