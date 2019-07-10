@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190610 16:34:31.181" generator="Robot 3.1.2 (Python 2.7.15 on win32)">
+<suite source="C:\Users\odysh\Desktop\rf\Test Suites\FEEDS" id="s1" name="FEEDS">
+<suite source="C:\Users\odysh\Desktop\rf\Test Suites\FEEDS\FILTERS" id="s1-s1" name="FILTERS">
+<suite source="C:\Users\odysh\Desktop\rf\Test Suites\FEEDS\FILTERS\ts5.robot" id="s1-s1-s1" name="Ts5">
+<test id="s1-s1-s1-t1" name="tc9">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>TC9</arg>
+</arguments>
+<msg timestamp="20190610 16:34:31.209" level="INFO">TC9</msg>
+<status status="PASS" endtime="20190610 16:34:31.209" starttime="20190610 16:34:31.209"></status>
+</kw>
+<tags>
+<tag>HIGH</tag>
+<tag>LOW</tag>
+<tag>SMOKE</tag>
+</tags>
+<status status="PASS" endtime="20190610 16:34:31.209" critical="yes" starttime="20190610 16:34:31.208"></status>
+</test>
+<test id="s1-s1-s1-t2" name="tc10">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>TC10</arg>
+</arguments>
+<msg timestamp="20190610 16:34:31.211" level="INFO">TC10</msg>
+<status status="PASS" endtime="20190610 16:34:31.211" starttime="20190610 16:34:31.211"></status>
+</kw>
+<tags>
+<tag>LOW</tag>
+</tags>
+<status status="PASS" endtime="20190610 16:34:31.212" critical="yes" starttime="20190610 16:34:31.211"></status>
+</test>
+<status status="PASS" endtime="20190610 16:34:31.213" starttime="20190610 16:34:31.207"></status>
+</suite>
+<suite source="C:\Users\odysh\Desktop\rf\Test Suites\FEEDS\FILTERS\ts6.robot" id="s1-s1-s2" name="Ts6">
+<test id="s1-s1-s2-t1" name="tc11">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>TC11</arg>
+</arguments>
+<msg timestamp="20190610 16:34:31.217" level="INFO">TC11</msg>
+<status status="PASS" endtime="20190610 16:34:31.217" starttime="20190610 16:34:31.216"></status>
+</kw>
+<tags>
+<tag>HIGH</tag>
+<tag>LOW</tag>
+<tag>SMOKE</tag>
+</tags>
+<status status="PASS" endtime="20190610 16:34:31.217" critical="yes" starttime="20190610 16:34:31.216"></status>
+</test>
+<test id="s1-s1-s2-t2" name="tc12">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>TC12</arg>
+</arguments>
+<msg timestamp="20190610 16:34:31.218" level="INFO">TC12</msg>
+<status status="PASS" endtime="20190610 16:34:31.218" starttime="20190610 16:34:31.218"></status>
+</kw>
+<tags>
+<tag>LOW</tag>
+</tags>
+<status status="PASS" endtime="20190610 16:34:31.218" critical="yes" starttime="20190610 16:34:31.217"></status>
+</test>
+<status status="PASS" endtime="20190610 16:34:31.225" starttime="20190610 16:34:31.214"></status>
+</suite>
+<status status="PASS" endtime="20190610 16:34:31.231" starttime="20190610 16:34:31.205"></status>
+</suite>
+<suite source="C:\Users\odysh\Desktop\rf\Test Suites\FEEDS\ts3.robot" id="s1-s2" name="Ts3">
+<test id="s1-s2-t1" name="tc5">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>TC5</arg>
+</arguments>
+<msg timestamp="20190610 16:34:31.240" level="INFO">TC5</msg>
+<status status="PASS" endtime="20190610 16:34:31.241" starttime="20190610 16:34:31.240"></status>
+</kw>
+<tags>
+<tag>HIGH</tag>
+<tag>LOW</tag>
+<tag>SMOKE</tag>
+</tags>
+<status status="PASS" endtime="20190610 16:34:31.241" critical="yes" starttime="20190610 16:34:31.240"></status>
+</test>
+<test id="s1-s2-t2" name="tc6">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>TC6</arg>
+</arguments>
+<msg timestamp="20190610 16:34:31.242" level="INFO">TC6</msg>
+<status status="PASS" endtime="20190610 16:34:31.242" starttime="20190610 16:34:31.242"></status>
+</kw>
+<tags>
+<tag>LOW</tag>
+</tags>
+<status status="PASS" endtime="20190610 16:34:31.242" critical="yes" starttime="20190610 16:34:31.242"></status>
+</test>
+<status status="PASS" endtime="20190610 16:34:31.243" starttime="20190610 16:34:31.236"></status>
+</suite>
+<suite source="C:\Users\odysh\Desktop\rf\Test Suites\FEEDS\ts4.robot" id="s1-s3" name="Ts4">
+<test id="s1-s3-t1" name="tc7">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>TC7</arg>
+</arguments>
+<msg timestamp="20190610 16:34:31.247" level="INFO">TC7</msg>
+<status status="PASS" endtime="20190610 16:34:31.248" starttime="20190610 16:34:31.247"></status>
+</kw>
+<tags>
+<tag>HIGH</tag>
+<tag>LOW</tag>
+<tag>SMOKE</tag>
+</tags>
+<status status="PASS" endtime="20190610 16:34:31.249" critical="yes" starttime="20190610 16:34:31.247"></status>
+</test>
+<test id="s1-s3-t2" name="tc8">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>TC8</arg>
+</arguments>
+<msg timestamp="20190610 16:34:31.250" level="INFO">TC8</msg>
+<status status="PASS" endtime="20190610 16:34:31.250" starttime="20190610 16:34:31.250"></status>
+</kw>
+<tags>
+<tag>LOW</tag>
+</tags>
+<status status="PASS" endtime="20190610 16:34:31.250" critical="yes" starttime="20190610 16:34:31.250"></status>
+</test>
+<status status="PASS" endtime="20190610 16:34:31.251" starttime="20190610 16:34:31.245"></status>
+</suite>
+<status status="PASS" endtime="20190610 16:34:31.254" starttime="20190610 16:34:31.183"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="8">Critical Tests</stat>
+<stat fail="0" pass="8">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="4">HIGH</stat>
+<stat fail="0" pass="8">LOW</stat>
+<stat fail="0" pass="4">SMOKE</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="FEEDS" pass="8">FEEDS</stat>
+<stat fail="0" id="s1-s1" name="FILTERS" pass="4">FEEDS.FILTERS</stat>
+<stat fail="0" id="s1-s1-s1" name="Ts5" pass="2">FEEDS.FILTERS.Ts5</stat>
+<stat fail="0" id="s1-s1-s2" name="Ts6" pass="2">FEEDS.FILTERS.Ts6</stat>
+<stat fail="0" id="s1-s2" name="Ts3" pass="2">FEEDS.Ts3</stat>
+<stat fail="0" id="s1-s3" name="Ts4" pass="2">FEEDS.Ts4</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

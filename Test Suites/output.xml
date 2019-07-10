@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190704 17:30:50.734" generator="Robot 3.1.2 (Python 2.7.15 on win32)">
+<suite source="C:\Users\odysh\Desktop\rf\Test Suites\ts1.robot" id="s1" name="Ts1">
+<test id="s1-t1" name="Test Case 1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Hello, World from Robot!</arg>
+</arguments>
+<msg timestamp="20190704 17:30:50.758" level="INFO">Hello, World from Robot!</msg>
+<status status="PASS" endtime="20190704 17:30:50.758" starttime="20190704 17:30:50.758"></status>
+</kw>
+<status status="PASS" endtime="20190704 17:30:50.758" critical="yes" starttime="20190704 17:30:50.757"></status>
+</test>
+<test id="s1-t2" name="Test Case 2">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Hello, World from Robot!</arg>
+</arguments>
+<status status="PASS" endtime="20190704 17:30:50.760" starttime="20190704 17:30:50.760"></status>
+</kw>
+<status status="PASS" endtime="20190704 17:30:50.760" critical="yes" starttime="20190704 17:30:50.759"></status>
+</test>
+<status status="PASS" endtime="20190704 17:30:50.762" starttime="20190704 17:30:50.736"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Ts1" pass="2">Ts1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

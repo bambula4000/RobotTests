@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190611 09:42:20.629" generator="Robot 3.1.2 (Python 2.7.15 on win32)">
+<suite source="C:\Users\odysh\Desktop\rf\Test Suites\pybot\SDS\ts.robot" id="s1" name="Ts">
+<test id="s1-t1" name="Tasve2b1 - tc1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>TC1</arg>
+</arguments>
+<msg timestamp="20190611 09:42:20.653" level="INFO">TC1</msg>
+<status status="PASS" endtime="20190611 09:42:20.654" starttime="20190611 09:42:20.653"></status>
+</kw>
+<doc>Test case 1 documentation</doc>
+<tags>
+<tag>HIGH</tag>
+<tag>LOW</tag>
+<tag>SMOKE</tag>
+</tags>
+<status status="PASS" endtime="20190611 09:42:20.654" critical="yes" starttime="20190611 09:42:20.652"></status>
+</test>
+<test id="s1-t2" name="tc2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>TC2</arg>
+</arguments>
+<msg timestamp="20190611 09:42:20.657" level="INFO">TC2</msg>
+<status status="PASS" endtime="20190611 09:42:20.657" starttime="20190611 09:42:20.657"></status>
+</kw>
+<tags>
+<tag>LOW</tag>
+</tags>
+<status status="PASS" endtime="20190611 09:42:20.657" critical="yes" starttime="20190611 09:42:20.656"></status>
+</test>
+<status status="PASS" endtime="20190611 09:42:20.659" starttime="20190611 09:42:20.632"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">HIGH</stat>
+<stat fail="0" pass="2">LOW</stat>
+<stat fail="0" pass="1">SMOKE</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Ts" pass="2">Ts</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
