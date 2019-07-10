@@ -1,38 +1,197 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20190704 17:30:50.734" generator="Robot 3.1.2 (Python 2.7.15 on win32)">
-<suite source="C:\Users\odysh\Desktop\rf\Test Suites\ts1.robot" id="s1" name="Ts1">
-<test id="s1-t1" name="Test Case 1">
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
+<robot rpa="false" generated="20190710 05:54:08.896" generator="Robot 3.1.2 (Python 2.7.15rc1 on linux2)">
+<suite source="/home/user/RobotTests/Test Suites/test_suite_2.robot" id="s1" name="Test Suite 2">
+<test id="s1-t1" name="HW2">
+<kw name="Calculation of discount price" library="keywords">
 <arguments>
-<arg>Hello, World from Robot!</arg>
+<arg>product_price=${100}</arg>
+<arg>discount=${5}</arg>
 </arguments>
-<msg timestamp="20190704 17:30:50.758" level="INFO">Hello, World from Robot!</msg>
-<status status="PASS" endtime="20190704 17:30:50.758" starttime="20190704 17:30:50.758"></status>
+<assign>
+<var>${actual_price_product1}</var>
+</assign>
+<kw name="Calculation of discount sum" library="keywords">
+<arguments>
+<arg>${product_price}</arg>
+<arg>${discount}</arg>
+</arguments>
+<assign>
+<var>${discount_sum}</var>
+</assign>
+<kw name="Multiply" library="mathemetical_operations">
+<doc>Multiplication is the second basic operation of arithmetic.
+Multiplication also combines two numbers into a single number,
+the product (Such as 4 * 2 = 8 or 6 * 2 = 12).</doc>
+<arguments>
+<arg>${product_price}</arg>
+<arg>${discount}</arg>
+</arguments>
+<assign>
+<var>${temp_var}</var>
+</assign>
+<msg timestamp="20190710 05:54:08.919" level="INFO">${temp_var} = 500</msg>
+<status status="PASS" endtime="20190710 05:54:08.919" starttime="20190710 05:54:08.919"></status>
 </kw>
-<status status="PASS" endtime="20190704 17:30:50.758" critical="yes" starttime="20190704 17:30:50.757"></status>
-</test>
-<test id="s1-t2" name="Test Case 2">
+<kw name="Divide" library="mathemetical_operations">
+<doc>Division finds the quotient of two numbers, the dividend divided by the
+divisor. Any dividend divided by 0 is undefined. For distinct positive
+numbers, if the dividend is larger than the divisor, the quotient is
+greater than 1, otherwise it is less than 1 (a similar rule applies for
+negative numbers). (Such as 4 / 2 = 2 or 6 / 2 = 3).</doc>
+<arguments>
+<arg>${temp_var}</arg>
+<arg>${100}</arg>
+</arguments>
+<assign>
+<var>${discount_sum}</var>
+</assign>
+<msg timestamp="20190710 05:54:08.919" level="INFO">${discount_sum} = 5</msg>
+<status status="PASS" endtime="20190710 05:54:08.919" starttime="20190710 05:54:08.919"></status>
+</kw>
+<msg timestamp="20190710 05:54:08.920" level="INFO">${discount_sum} = 5</msg>
+<status status="PASS" endtime="20190710 05:54:08.920" starttime="20190710 05:54:08.918"></status>
+</kw>
+<kw name="Substract" library="mathemetical_operations">
+<doc>Subtraction is the inverse operation to addition. Subtraction finds the
+difference between two numbers, the minuend minus the subtrahend
+(Such as 4 - 2 = 2 or 8 - 5 = 3).</doc>
+<arguments>
+<arg>${product_price}</arg>
+<arg>${discount_sum}</arg>
+</arguments>
+<assign>
+<var>${discount_price}</var>
+</assign>
+<msg timestamp="20190710 05:54:08.920" level="INFO">${discount_price} = 95</msg>
+<status status="PASS" endtime="20190710 05:54:08.920" starttime="20190710 05:54:08.920"></status>
+</kw>
+<msg timestamp="20190710 05:54:08.920" level="INFO">${actual_price_product1} = 95</msg>
+<status status="PASS" endtime="20190710 05:54:08.920" starttime="20190710 05:54:08.918"></status>
+</kw>
+<kw name="Calculation of discount price" library="keywords">
+<arguments>
+<arg>product_price=${990}</arg>
+<arg>discount=${15}</arg>
+</arguments>
+<assign>
+<var>${actual_price_product2}</var>
+</assign>
+<kw name="Calculation of discount sum" library="keywords">
+<arguments>
+<arg>${product_price}</arg>
+<arg>${discount}</arg>
+</arguments>
+<assign>
+<var>${discount_sum}</var>
+</assign>
+<kw name="Multiply" library="mathemetical_operations">
+<doc>Multiplication is the second basic operation of arithmetic.
+Multiplication also combines two numbers into a single number,
+the product (Such as 4 * 2 = 8 or 6 * 2 = 12).</doc>
+<arguments>
+<arg>${product_price}</arg>
+<arg>${discount}</arg>
+</arguments>
+<assign>
+<var>${temp_var}</var>
+</assign>
+<msg timestamp="20190710 05:54:08.921" level="INFO">${temp_var} = 14850</msg>
+<status status="PASS" endtime="20190710 05:54:08.921" starttime="20190710 05:54:08.921"></status>
+</kw>
+<kw name="Divide" library="mathemetical_operations">
+<doc>Division finds the quotient of two numbers, the dividend divided by the
+divisor. Any dividend divided by 0 is undefined. For distinct positive
+numbers, if the dividend is larger than the divisor, the quotient is
+greater than 1, otherwise it is less than 1 (a similar rule applies for
+negative numbers). (Such as 4 / 2 = 2 or 6 / 2 = 3).</doc>
+<arguments>
+<arg>${temp_var}</arg>
+<arg>${100}</arg>
+</arguments>
+<assign>
+<var>${discount_sum}</var>
+</assign>
+<msg timestamp="20190710 05:54:08.921" level="INFO">${discount_sum} = 148</msg>
+<status status="PASS" endtime="20190710 05:54:08.921" starttime="20190710 05:54:08.921"></status>
+</kw>
+<msg timestamp="20190710 05:54:08.922" level="INFO">${discount_sum} = 148</msg>
+<status status="PASS" endtime="20190710 05:54:08.922" starttime="20190710 05:54:08.921"></status>
+</kw>
+<kw name="Substract" library="mathemetical_operations">
+<doc>Subtraction is the inverse operation to addition. Subtraction finds the
+difference between two numbers, the minuend minus the subtrahend
+(Such as 4 - 2 = 2 or 8 - 5 = 3).</doc>
+<arguments>
+<arg>${product_price}</arg>
+<arg>${discount_sum}</arg>
+</arguments>
+<assign>
+<var>${discount_price}</var>
+</assign>
+<msg timestamp="20190710 05:54:08.922" level="INFO">${discount_price} = 842</msg>
+<status status="PASS" endtime="20190710 05:54:08.922" starttime="20190710 05:54:08.922"></status>
+</kw>
+<msg timestamp="20190710 05:54:08.922" level="INFO">${actual_price_product2} = 842</msg>
+<status status="PASS" endtime="20190710 05:54:08.922" starttime="20190710 05:54:08.920"></status>
+</kw>
+<kw name="Total price" library="keywords">
+<arguments>
+<arg>${actual_price_product1}</arg>
+<arg>${actual_price_product2}</arg>
+</arguments>
+<assign>
+<var>${total_price}</var>
+</assign>
+<kw name="Add" library="mathemetical_operations">
+<doc>Addition is the most basic operation of arithmetic. In its simple form,
+addition combines two numbers, the addends or terms, into a single number,
+the sum of the numbers (Such as 2 + 2 = 4 or 3 + 5 = 8).</doc>
+<arguments>
+<arg>${price1}</arg>
+<arg>${disc1}</arg>
+</arguments>
+<assign>
+<var>${total_price}</var>
+</assign>
+<msg timestamp="20190710 05:54:08.923" level="INFO">${total_price} = 937</msg>
+<status status="PASS" endtime="20190710 05:54:08.923" starttime="20190710 05:54:08.923"></status>
+</kw>
+<msg timestamp="20190710 05:54:08.923" level="INFO">${total_price} = 937</msg>
+<status status="PASS" endtime="20190710 05:54:08.923" starttime="20190710 05:54:08.922"></status>
+</kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>Hello, World from Robot!</arg>
+<arg>${total_price}</arg>
 </arguments>
-<status status="PASS" endtime="20190704 17:30:50.760" starttime="20190704 17:30:50.760"></status>
+<status status="PASS" endtime="20190710 05:54:08.923" starttime="20190710 05:54:08.923"></status>
 </kw>
-<status status="PASS" endtime="20190704 17:30:50.760" critical="yes" starttime="20190704 17:30:50.759"></status>
+<doc>Case takes price and discount for two products and calculate their total price and print it to console.
+
+Parameters:
+- *product1* - should be an interger.
+- *discount* - should be an interger, please write without '%' symbol.
+- *product2* - should be an interger.
+- *discoun2* - should be an interger, please write without '%' symbol.</doc>
+<status status="PASS" endtime="20190710 05:54:08.923" critical="yes" starttime="20190710 05:54:08.918"></status>
 </test>
-<status status="PASS" endtime="20190704 17:30:50.762" starttime="20190704 17:30:50.736"></status>
+<doc>Test suite contais materials depend on home work2 and home work4.
+
+Structure:
+- *'Test Suites'* directory conains all test suites.
+- *'Resources File'* directory contains robot keywords.
+- *'Libraries'* directory contains custom keywords.</doc>
+<status status="PASS" endtime="20190710 05:54:08.924" starttime="20190710 05:54:08.897"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="2">Critical Tests</stat>
-<stat fail="0" pass="2">All Tests</stat>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="Ts1" pass="2">Ts1</stat>
+<stat fail="0" id="s1" name="Test Suite 2" pass="1">Test Suite 2</stat>
 </suite>
 </statistics>
 <errors>
