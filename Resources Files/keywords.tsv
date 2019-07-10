@@ -1,5 +1,5 @@
 *Settings*							
-Library	mathemetical_operations.py						
+Library	../Libraries/mathemetical_operations.py						
 							
 *Keywords*							
 Total price	[Arguments]	${price1}	${disc1}				
